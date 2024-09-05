@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 1</title>
     <link rel="stylesheet" type="text/css" href="./style/main.css" />
-	<script href="https://releases.jquery.com/git/jquery-git.js"></script>
-	<script href="main.js"></script>
+    <script href="https://releases.jquery.com/git/jquery-git.js"></script>
+    <script href="main.js"></script>
 </head>
 
 <body>
@@ -19,12 +19,18 @@
 
         ?>
         <div id="content">
-            <form action="./comp/ex1Comp.php" method="post">
-                <label for="fatorial">Número:</label>
-                <input type="number" name="fatorial">
-                <input type="submit" value="Enviar" name="submit">
+            <span>
+
+                <?php
+
+                $r = $_GET['r'];
+                $f = $_GET['f'];
+
+                echo "O fatorial do número $f é: $r";
+
+                ?>
                 <a href="./index.php" class="bckBtn">Voltar</a>
-            </form>
+            </span>
         </div>
     </div>
 
